@@ -1,0 +1,8 @@
+package 選択授業
+package 学生
+package 先生
+package java応用ゼミ
+選択授業 -[dashed]-> 学生
+選択授業 -[bold]->先生
+学生 -[dashed]->java応用ゼミ
+先生 -[dashed]->java応用ゼミ
