@@ -1,0 +1,10 @@
+@startuml ユースケース図
+left to right direction
+rectangle 販売管理システム{
+    actor 出荷担当者
+    usecase 注文商品の確認
+    usecase 注文商品の登録
+}
+出荷担当者-->注文商品の確認
+出荷担当者-->注文商品の登録
+
