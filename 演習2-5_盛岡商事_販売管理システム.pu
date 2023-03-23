@@ -1,7 +1,7 @@
 @startuml ユースケース図
 left to right direction
+ actor 出荷担当者
 rectangle 販売管理システム{
-    actor 出荷担当者
     usecase 注文商品の確認
     usecase 注文商品の登録
 }
