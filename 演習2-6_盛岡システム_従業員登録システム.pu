@@ -3,9 +3,9 @@ left to right direction
     actor 人事担当者
     actor 社員
 rectangle 従業員システム{
-    usecase 社員情報の登録
-    usecase 社員情報の修正
-    usecase 社員情報の参照
+    usecase 社員情報の登録する
+    usecase 社員情報の修正する
+    usecase 社員情報の参照する
 }
 人事担当者 --> 社員情報の登録
 社員 --> 社員情報の参照
