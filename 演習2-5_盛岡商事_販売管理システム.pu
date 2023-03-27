@@ -2,9 +2,9 @@
 left to right direction
  actor 出荷担当者
 rectangle 販売管理システム{
-    usecase 注文商品の確認
-    usecase 注文商品の登録
+    usecase 注文商品の確認する
+    usecase 注文商品の登録する
 }
-出荷担当者-->注文商品の確認
-出荷担当者-->注文商品の登録
+出荷担当者-->注文商品の確認する
+出荷担当者-->注文商品の登録する
 
