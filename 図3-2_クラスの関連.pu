@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+会社 -> 社員 : 雇う>
+高度情報工学科 "1" -- "*" 学生
+会員リスト o-- 会員
+note right of 会員リスト
+    部分classがなくても成り立ちます
+end note
+パソコン *-- HDD
+注文 -- 注文管理
+note right of 注文管理
+  注文管理が注文のメソッドもしくは属性を呼び出している
+end note
+@enduml
