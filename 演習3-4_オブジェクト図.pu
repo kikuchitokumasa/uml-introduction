@@ -1,0 +1,22 @@
+@startuml 
+object "車:車クラス" as car{
+    
+}
+object "車:タイヤクラス" as tire1{
+    
+}
+object "車:タイヤクラス" as tire2{
+    
+}
+object "車:タイヤクラス" as tire3{
+    
+}
+object "車:タイヤクラス" as tire4{
+    
+}
+car-up-tire1
+car-down-tire2
+car-ri-tire3
+car-le-tire4
+
+@enduml
