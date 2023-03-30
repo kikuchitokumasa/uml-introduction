@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+class 医者{
+}
+class 患者{
+}
+class 医局{
+    -外科
+    -内科
+    -小児科
+}
+class 診察記録{
+
+}
+患者"*" -- "1"医者 : 診察 <
+医者"*" --o "1"医局
+患者"1" -- "1"診察記録 
+医者 -up-> 診察記録 : 作成 >
+@enduml
