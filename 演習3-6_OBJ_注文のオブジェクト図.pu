@@ -1,15 +1,15 @@
 @startuml 
 left to right direction
-object "髙橋洋平さん:社員クラス" as 髙橋洋平{
+object "髙橋洋平さん:社員" as 髙橋洋平{
 
 }
-object "樋口正之さん:社員クラス" as 樋口正之{
+object "樋口正之さん:社員" as 樋口正之{
     
 }
-object "情報処理安全確保支援士:資格クラス" as 情報処理安全確保支援士{
+object "情報処理安全確保支援士:資格" as 情報処理安全確保支援士{
 
 }
-object "LinuC試験Level1:資格クラス" as LinuC試験Level1{
+object "LinuC試験Level1:資格" as LinuC試験Level1{
 
 }
 髙橋洋平--情報処理安全確保支援士
