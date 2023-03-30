@@ -1,4 +1,5 @@
 @startuml 
+left to right direction
 object "髙橋洋平さん:社員クラス" as 髙橋洋平{
 
 }
