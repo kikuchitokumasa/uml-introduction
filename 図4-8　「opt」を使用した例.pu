@@ -1,0 +1,18 @@
+@startuml
+hide footbox
+skinparam style strictuml /' 厳密なUMLに準拠する'/
+Actor 顧客 as user
+participant ":入力画面" as input
+participant ":貸出コントローラ" as control
+autonumber
+user -> input : データ入力
+activate input
+autonumber 10 /'メッセージに自動で番号を降る'/
+opt ログイン成功
+input -> control:通常貸出()
+activate control
+input <-- control:貸出明細情報()
+deactivate control
+end alt
+deactivate control
+@enduml
