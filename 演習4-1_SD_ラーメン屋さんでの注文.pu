@@ -1,0 +1,16 @@
+@startuml
+hide footbox
+actor ":客" as members
+participant ":フロア店員" as boundary
+participant ":料理人" as control
+mainframe sd ラーメン屋さん
+
+activate members
+members ->  boundary : ラーメンを注文する
+activate boundary
+boundary -> control:　調理を指示する
+activate control
+control -> control :調理をする
+control -->> boundary : ラーメン
+boundary -->> members :ラーメン
+@enduml
