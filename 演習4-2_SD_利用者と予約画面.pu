@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+participant 利用者 as boundary
+participant 予約画面 as entity
+
+activate boundary
+boundary -> entity :ログインメッセージ()
+activate entity
+entity ->> entity :確認操作()
+activate entity 
+deactivate entity
+
+
+@enduml
