@@ -1,0 +1,15 @@
+@startuml
+hide footbox
+participant データ更新コントローラ as control
+participant ":ホテル" as hotel
+participant ":予約" as entity
+
+activate control
+control-> hotel:予約する()
+activate hotel
+create entity
+hotel -> entity :<<create>>
+hotel -> hotel :予約登録()
+activate hotel
+
+@enduml
