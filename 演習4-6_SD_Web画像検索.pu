@@ -1,0 +1,22 @@
+@startuml 図４－６
+hide footbox
+actor ":ユーザ" as a 
+participant ":ブラウザ" as b
+participant ":WEBサーバ" as c
+participant ":画像サーバ" as d
+activate a
+a -> b :リンクを押す
+activate b
+b -> c :画像ファイル名を渡す
+activate c
+c -> d :画像ファイル名を探す命令を渡す
+activate d
+d -> d :画像ファイルを探す
+d --> c :画像ファイル
+deactivate d
+c --> b :HTMLと画像ファイル
+deactivate c
+b --> a :画像の閲覧
+deactivate b
+deactivate a
+@enduml
