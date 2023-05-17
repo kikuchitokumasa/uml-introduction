@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+actor 利用者 as user 
+actor 看護師 as nasu
+rectangle 診察予約システム{
+    usecase 予約する as a1
+    usecase 自分の予約を確認する as a2
+    usecase 順番を取り消す as a3
+    usecase 今の番号を変更する as a4
+}
+user --> a1
+user --> a2
+user --> a3
+nasu --> a4
+
+@enduml
