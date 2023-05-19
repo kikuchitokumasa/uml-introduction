@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+actor 客 as members
+participant "料金装置" as boundary
+participant "ボタン" as control
+participant "ベンダー装置" as entity
+
+boundary --> control : 1.お金を投入
+activate control
+members --> control : 2.商品の選択
+control --> entity : 3.選択した情報を選択
+activate entity
+entity --> members : 4.商品の引き渡し
+@enduml
