@@ -1,0 +1,17 @@
+@startuml 例題1
+left to right direction
+actor ユーザー as u
+actor 光センサ as r
+actor CPU as c
+rectangle ライントレーサー {
+usecase 電源を操作する as po
+usecase 明るさを判断する as ri
+usecase 右モーターを操作する as ro
+usecase 左モーターを操作する as lo
+}
+u-->po
+r-->ri
+r-->c
+c-->ro
+c-->lo
+@enduml
