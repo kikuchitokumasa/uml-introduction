@@ -1,0 +1,23 @@
+@startuml
+title カレーの作り方手順
+start
+
+:野菜を切る;
+
+fork
+    :肉を炒める;
+fork 
+        :野菜を炒める;
+fork again
+        :クミンシードを炒める;
+end fork
+fork again
+
+    :米を炊いておく;
+
+end fork
+:全部入れて煮込む;
+:ルウを入れる;
+:盛り付け;
+stop
+@enduml
