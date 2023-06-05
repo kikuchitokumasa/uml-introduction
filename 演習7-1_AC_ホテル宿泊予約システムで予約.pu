@@ -1,0 +1,11 @@
+@startuml
+start
+title ログイン手順
+repeat
+    :ユーザー名を入力;
+    :パスワードを入力;
+repeat while(true) -> [no]
+:ログイン成功;
+
+stop
+@enduml
